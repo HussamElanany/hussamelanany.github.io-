@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Data Saving and Display Demo</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3644361111028070"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #data-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #data-form {
+            padding: 20px;
+        }
+
+        #save-data-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #saveDataBtn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #data-table {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        #data-table-body tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        a {
+            color: #4285f4;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Google AdSense script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3644361111028070"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="data-container">
+
+        <!-- Google AdSense ad code -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3644361111028070"
+            data-ad-slot="9653818103" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <div id="data-form">
+            <a href="index.html">Home</a>
+            <form id="save-data-form">
+                <h2>Save Customer Data</h2>
+                <label for="customer-name">Customer's Name:</label>
+                <input type="text" id="customer-name" required>
+                <label for="customer-age">Age:</label>
+                <input type="number" id="customer-age" required>
+                <label for="customer-code">Code:</label>
+                <input type="text" id="customer-code" required>
+                <label for="customer-letter">Letter:</label>
+                <input type="text" id="customer-letter" required>
+                <button type="button" id="saveDataBtn">Save Data</button>
+            </form>
+        </div>
+
+        <div id="data-table">
+            <h2>Saved Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Code</th>
+                        <th>Letter</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table-body"></tbody>
+            </table>
+        </div>
+
+
+        <script type="module" src="save-data.js"></script>
+</body>
+
+</html>
